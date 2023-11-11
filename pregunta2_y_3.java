@@ -10,7 +10,6 @@ public class Main {
             empleados[i].leerDatos();
             i++;
         }
-
         System.out.println("\nDatos de los empleados:");
         i = 0;
 

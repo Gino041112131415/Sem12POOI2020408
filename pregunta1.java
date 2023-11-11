@@ -1,13 +1,13 @@
 public class Main
 {
-	public static void main(String[] args) {
-		 Hora primeraHora = new Hora(12, 30, 00);
-         Hora segundaHora = new Hora(13, 00, 00);
-      primeraHora.visualizar();
-      segundaHora.visualizar();
+public static void main(String[] args) {
+ Hora primeraHora = new Hora(12, 30, 00);
+ Hora segundaHora = new Hora(13, 00, 00);
+ primeraHora.visualizar();
+ segundaHora.visualizar();
 
-    Hora horafinal = primeraHora.sumar(segundaHora);
-    horafinal.visualizar();
+  Hora horafinal = primeraHora.sumar(segundaHora);
+  horafinal.visualizar();
 	}
 }
 public class Hora {

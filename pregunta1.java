@@ -12,8 +12,10 @@ public class Main
 }
 public class Hora {
     private int horas , minutos , segundos ;
-    public Hora() {}
-                       public Hora(int horas, int minutos, int segundos) {
+	
+ public Hora() {}
+	
+ public Hora(int horas, int minutos, int segundos) {
         this.horas = horas;
         this.minutos = minutos;
         this.segundos = segundos;
@@ -21,7 +23,7 @@ public class Hora {
  public void visualizar() {
     System.out.println(String.format("%02d:%02d:%02d", this.horas, this.minutos, this.segundos));
  } 
-public Hora sumar(Hora h) {
+ public Hora sumar(Hora h) {
      int horaSuma = this.horas + h.horas;
      int minutoSuma = this.minutos + h.minutos;
      int segundoSuma = this.segundos + h.segundos;
@@ -31,6 +33,6 @@ public Hora sumar(Hora h) {
     for (; segundoSuma >= 60; segundoSuma -= 60) {
         minutoSuma++;
     }
-                     return new Hora(horaSuma, minutoSuma, segundoSuma);
+   return new Hora(horaSuma, minutoSuma, segundoSuma);
     }
 }

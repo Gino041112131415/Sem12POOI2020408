@@ -1,16 +1,16 @@
 public class Main {
     public static void main(String[] args) {
-  LAN lanSimulation = new LAN();
-        lanSimulation.añadirNodo("Nodo  numero 1");
-        lanSimulation.añadirNodo("Nodo  numero 2");
-        lanSimulation.enumerarNodos();
-        lanSimulation.quitarNodo("Nodo  numero 1");
-        lanSimulation.config_Red("arbol");
-        lanSimulation.E_T_Paquete(1024);
-        lanSimulation.e_Paquete("Nodo numero 2", "Nodo  numero 3");
-        lanSimulation.d_Paquete("Nodo  numero 2");
-        lanSimulation.Estadisticas();
-  }
+  LAN lan = new LAN();
+        lan.añadirNodo("Nodo  numero 1");
+        lan.añadirNodo("Nodo  numero 2");
+        lan.enumerarNodos();
+        lan.quitarNodo("Nodo  numero 1");
+        lan.config_Red("arbol");
+        lan.E_T_Paquete(1024);
+        lan.e_Paquete("Nodo numero 2", "Nodo  numero 3");
+        lan.d_Paquete("Nodo  numero 2");
+        lan.Estadisticas();
+}
 }
 
 import java.util.ArrayList;
